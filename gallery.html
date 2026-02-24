@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - TVS King | Vijay TVS</title>
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional local styles if needed */
+        body {
+            background-color: #fdfdfd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Global Header -->
+    <header class="global-header">
+        <div class="header-left">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/Vijay%20tvs.jpeg" alt="Vijay TVS Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="gallery.html" style="color: var(--primary-red);">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="header-right">
+            <div class="secondary-links">
+                <a href="https://wa.me/919360951107?text=Hi%20Vijay%20TVS,%20I'm%20interested%20in%20buying%20a%20vehicle." target="_blank"><i class="fab fa-whatsapp"></i> Buy Vehicle</a>
+                <span class="divider">|</span>
+                <a href="test-ride.html">Test Ride</a>
+                <span class="divider">|</span>
+                <a href="service.html">Service</a>
+            </div>
+            <div class="utility-icons">
+                <div class="header-social-group">
+                    <a href="https://www.facebook.com/TVSMotorCompany" target="_blank" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/tvscoimbatore/" target="_blank" class="icon-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@tvscoimbatore" target="_blank" class="icon-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="gallery-page-hero">
+        <div class="container">
+            <span class="gal-sub" style="color: #fff; opacity: 0.8;">OUR JOURNEY</span>
+            <h1>Visual Experience</h1>
+            <p>Discover the world of TVS King through our premium collection of moments. Quality, performance, and reliability in every frame.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid-container">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-card" onclick="openLightbox('Gallery/DSC09547.jpg')">
+                    <img src="Gallery/DSC09547.jpg" alt="TVS King High Performance" loading="lazy" decoding="async" fetchpriority="low">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-card" onclick="openLightbox('Gallery/DSC09555.jpg')">
+                    <img src="Gallery/DSC09555.jpg" alt="TVS King Interior" loading="lazy" decoding="async" fetchpriority="low">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-card" onclick="openLightbox('Gallery/DSC09664.jpg')">
+                    <img src="Gallery/DSC09664.jpg" alt="TVS King Durability" loading="lazy" decoding="async" fetchpriority="low">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-card" onclick="openLightbox('Gallery/DSC09820.jpg')">
+                    <img src="Gallery/DSC09820.jpg" alt="TVS King Design" loading="lazy" decoding="async" fetchpriority="low">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-card" onclick="openLightbox('Gallery/DSC09886.jpg')">
+                    <img src="Gallery/DSC09886.jpg" alt="TVS King Cargo" loading="lazy" decoding="async" fetchpriority="low">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-card" onclick="openLightbox('Gallery/DSC09907.jpg')">
+                    <img src="Gallery/DSC09907.jpg" alt="TVS King Customer Choice" loading="lazy" decoding="async" fetchpriority="low">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="gallery-lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="event.stopPropagation(); closeLightbox();">&times;</span>
+        <div class="lightbox-content" onclick="event.stopPropagation();">
+            <img id="lightbox-img" src="" alt="Gallery Full View">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="section" style="background: #0d1521; color: rgba(255,255,255,0.7); padding: 60px 4%;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
+                <div style="flex: 1; min-width: 200px;">
+                    <h5 style="color: #fff; margin-bottom: 20px; font-weight: 700;">THREE WHEELERS</h5>
+                    <ul style="font-size: 14px; line-height: 2;">
+                        <li><a href="index.html#passenger">Passenger Range</a></li>
+                        <li><a href="index.html#cargo">Cargo Range</a></li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                     <h5 style="color: #fff; margin-bottom: 20px; font-weight: 700;">BUYER GUIDE</h5>
+                    <ul style="font-size: 14px; line-height: 2;">
+                        <li><a href="index.html#finance">Finance</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="test-ride.html">Test Ride</a></li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <h5 style="color: #fff; margin-bottom: 20px; font-weight: 700;">COMPANY</h5>
+                    <ul style="font-size: 14px; line-height: 2;">
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div style="flex: 1.5; min-width: 250px;">
+                    <h5 style="color: #fff; margin-bottom: 15px; font-weight: 700;">CONTACT US</h5>
+                    <h6 style="color: var(--primary-red); font-size: 18px; font-weight: 800; margin-bottom: 15px; text-transform: uppercase;">Vijay TVS - Coimbatore</h6>
+                    <ul style="font-size: 14px; line-height: 1.8;">
+                        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px;">
+                            <i class="fas fa-phone-alt" style="margin-top: 5px; color: #fff;"></i>
+                            <a href="tel:+919360951107" style="font-size: 16px; font-weight: 700; color: #fff;">9360951107</a>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 15px;">
+                            <i class="fas fa-map-marker-alt" style="margin-top: 5px; color: #fff;"></i>
+                            <a href="https://maps.app.goo.gl/VHpHHcazRMZn9KPG9" target="_blank" style="color: #fff;">147/G-64, Sri Sai Complex, Avila Convent opposite, Venkitapuram, Coimbatore - 641025.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; font-size: 12px; display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <p>&copy; 2026 Vijay TVS. All Rights Reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            
+            // Fade in effect
+            lightbox.style.opacity = '0';
+            setTimeout(() => {
+                lightbox.style.transition = 'opacity 0.4s ease';
+                lightbox.style.opacity = '1';
+            }, 10);
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.opacity = '0';
+            setTimeout(() => {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 400);
+        }
+
+        // Close on Esc key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>
